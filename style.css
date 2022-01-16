@@ -1,0 +1,393 @@
+/* fonts link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+ /* common style */
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; 
+    border:none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: rgb(255, 252, 252);
+}
+
+section{
+    min-height: 100vh;
+    padding:0 9%;
+    padding-top: 2.5rem;
+    padding-bottom: 4rem;
+}
+
+  /* home section */
+.sec-1 > h3 {
+    font-size: 2rem;
+}
+
+.home-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-left{
+    padding-right: 3rem;
+}
+
+.home-left , .home-right{
+    flex: 1 1 40rem;
+}
+
+.home-left h1{
+    font-size: 3.5rem;
+
+}
+
+.home-left p{
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+ a{ 
+    font-size: 1.5rem;
+    padding: .5rem 2rem;
+    background-color: #E02C6D;
+    color: white;
+    border-radius: 1.5rem;
+}
+
+a:hover{
+    transform: scale(1.1);
+    transition: transform 2s ease;
+} 
+
+.fa-arrow-right{
+    padding-left: 1rem;
+    color: white;
+    
+}
+
+.home-right{
+    background-image: url(images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    padding-left: 3rem;
+    padding-top: 2rem;
+}
+
+.home-right img{
+    height: 40rem ;
+    width: 40rem;
+}
+
+
+ /* popular section  */
+.sec-2 > h2{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.Collection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.c-box{
+    flex: 1 1 40rem;
+    background-color: rgb(236, 233, 233);
+    height: 50rem;
+    border-radius: 1rem;
+    margin: 0rem 2rem 2rem 0rem;
+    
+}
+
+.c-box img{
+   width: 95%;
+   padding-top: 2rem;
+   padding-left: 2rem;
+}
+
+.c-box h2{
+    font-size: 2rem;
+    padding-top: .4rem;
+    padding-left: 2rem;
+}
+
+.c-box h4{
+    font-size: 1.5rem;
+    padding-top: .5rem;
+    padding-left: 2rem;
+}
+
+.c-box span{
+    padding-left: 2rem;
+    color: gold;
+}
+
+.c-box span i{
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+}
+
+.c-box .ratings{
+    color: #423b3be5;
+}
+
+.c-box p{
+    font-size: 1.2rem;
+    padding-left: 2rem;
+    padding-bottom: .5rem;
+}
+
+.see-more{
+    text-align: right;
+    color: #E02C6D;
+    font-size: 2rem;
+}
+
+.arrow{
+    color: #E02C6D;
+    padding-right:3rem ;
+}
+
+/* my section start  */
+section{
+    min-height: 65vh;
+}
+
+section > h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.my-sec{
+    display: flex;
+    flex-direction: row;
+    padding-top: 5rem;
+}
+
+.my-sec .text{
+    font-size: 2rem;
+    width: 50rem;
+    height: 25rem;
+    padding-left: 10rem;
+}
+
+.my-sec img{
+    width: 50rem;
+    height: 25rem;
+    padding-left: 10rem;
+}
+
+/* footer section  */
+.foot-section{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.foot-section h2{
+    font-size: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 1.5rem;
+}
+
+.foot-section p{
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+
+.social-icon{
+    padding-bottom: 3rem;
+}
+
+.social-icon i{
+    font-size: 2rem;
+    padding-right: 1.5rem;
+}
+
+
+/* responsive code */
+
+/* laptop */
+@media only screen and (max-width:1280px){
+    html{
+        font-size: 59%;
+    }
+
+    .my-sec img{
+        width: 40rem;
+        height:20rem ;
+    }
+}
+
+@media only screen and (max-width:1150px) {
+    
+    html{
+        font-size: 55%;
+    }
+
+    .home-right{
+        background-size: contain;
+    }
+
+    .my-sec img{
+        width: 38rem;
+        padding-left: 5rem;
+    }
+} 
+
+@media only screen and (max-width:1040px){
+    html{
+        font-size: 52%;
+    }
+    
+}
+
+
+
+@media only screen and (max-width:940px) {
+    
+    html{ 
+        font-size: 50%;
+    }
+
+    .my-sec img{
+        width: 35rem;
+        padding-left: 5rem;
+    }
+   
+}
+
+
+@media only screen and (max-width:900px) {
+    
+    html{ 
+        font-size: 45%;
+    }
+
+    .my-sec img{
+        width: 32rem;
+        padding-left: 4rem;
+    }
+   
+}
+    
+
+@media only screen and (max-width:850px) {
+    
+    html{ 
+        font-size: 45%;
+    }
+
+    .my-sec img{
+        width: 32rem;
+        padding-left: 3rem;
+    }
+   
+}
+
+
+@media only screen and (max-width:790px) {
+    
+    html{ 
+        font-size: 42%;
+    }
+
+    .my-sec img{
+        width: 30rem;
+        padding-left: 3rem;
+    }
+
+    .c-box{
+        flex: 1 1 40rem;
+        background-color: rgb(245, 238, 238);
+        width: 50%;
+        height: 55rem;
+        border-radius: 1rem;
+        margin: 0rem 2rem 2rem 0rem;
+        
+    }
+
+    .c-box img{
+            width: 95%;
+            padding-top: 2rem;
+            padding-left: 2rem;
+    }
+   
+
+
+/*tablet */
+/* 
+@media only screen and (max-width:700px) {
+    
+    html{
+        font-size: 42%;
+    }
+
+    section{
+        min-height: 75vh;
+        padding:0 5%;
+        padding-top: 2.5rem;
+        padding-bottom: 2rem;
+    }
+
+
+    .Collection{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .c-box{
+        flex: 1 1 40rem;
+        background-color: rgb(245, 238, 238);
+        height: 55rem;
+        border-radius: 1rem;
+        margin: 0rem 2rem 2rem 0rem;
+        
+    }
+
+    .c-box:nth-child(9){
+        padding-right: 1.5rem;
+        text-align: center;
+    }
+
+    .c-box:nth-child(9) img{
+            width: 90%;
+            height: 70%;     
+    }
+
+
+}
+
+@media only screen and (max-width:650px) {
+
+    .c-box{
+        height: 50rem; 
+        flex: 1 1 35rem;
+    }
+
+    .my-sec img, .text{
+        width: 38rem;
+        padding-left: 2.5rem;
+    }
+
+} */
+
+
+
+
