@@ -310,7 +310,7 @@ section > h1{
 
 /*tablet */
 
-@media only screen and (max-width:700px) {
+@media only screen and (min-width:480) and (max-width:700px) {
     
     html{
         font-size: 42%;
@@ -355,11 +355,16 @@ section > h1{
 @media only screen and (max-width:650px) {
 
     .c-box{
+        flex: 1 1 40rem;
         height: 50rem; 
-        flex: 1 1 35rem;
     }
 
-    .my-sec img, .text{
+    .my-sec img{
+        width: 38rem;
+        padding-left: 3rem;
+    }
+
+    .my-sec .text{
         width: 38rem;
         padding-left: 2.5rem;
     }
@@ -370,16 +375,23 @@ section > h1{
     html{
         font-size: 40%;
     }
+
+    .c-box{
+        height: 80rem;
+    }
 }
 
 @media only screen and (max-width:560px){
     html{
         font-size: 36%;
+    }
+
+    .c-box{
+        height: 80rem;
+    }
     
 }
 
-
-/* mobail */
 @media only screen and (max-width:500px){
     html{
         font-size: 34%;
@@ -392,11 +404,34 @@ section > h1{
         padding-bottom: 2rem;
     }
 
+    .c-box{
+        height: 50rem;
+    }
+
 }
+
+/* mobail */
 
 @media only screen and (max-width:480px){
     html{
         font-size: 32%;
+    }
+
+    .sec-1{
+        text-align: center;
+    }
+
+    .home-section, .Collection{
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 40rem;
+        /* flex-wrap: wrap; */
+        /* justify-content: space-between; */
+        /* align-items: center; */
+    }
+
+    .c-box{
+        height: 80rem;
     }
 
 }
@@ -424,3 +459,5 @@ section > h1{
        font-size: 22%;
        }
    }   
+
+   /* https://ishratjahanusha.github.io/Influencer-Gear/ */
